@@ -10,11 +10,11 @@ const makeCommit = async (n) => {
         return;
     }
 
-    const x = _.random(0, 54);
+    const x = _.random(0, 30);
     const y = _.random(0, 6);
     const DATE = moment()
     .subtract(11, "y")
-    .add(1, "d")
+    .add(15, "d")
     .add(x, "w")
     .add(y, "d")
     .format();
@@ -32,5 +32,5 @@ const makeCommit = async (n) => {
     makeCommit(n - 1);
 };
 
-makeCommit(979);
+makeCommit(50);
 
